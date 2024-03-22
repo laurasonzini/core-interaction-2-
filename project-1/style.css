@@ -375,11 +375,6 @@ img {
     white-space: nowrap;
     animation: moveText 45s linear infinite; /* Adjust the duration and timing function as needed */
 }
-.second
-{
-    border-bottom: 10px;
-}
-
 @keyframes moveText {
     0% {
         transform: translateX(-100%);
