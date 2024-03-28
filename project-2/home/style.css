@@ -1,0 +1,79 @@
+.navbar {
+    background-color: #FFFFFF; /* Background color */
+    color: black; /* Text color */
+    padding: 28px 0; 
+    padding-bottom: 5px;
+    text-align: center;
+  }
+  
+  .navbar-title {
+    font-size: 78px; /* Adjust font size */
+    font-family: Helvetica, Arial, sans-serif;
+  }
+.container {
+    width: 100%; /* tried to scale page */
+    height: 80%;
+  }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 338px);
+    grid-template-rows: repeat(4, 353px);
+    gap: 0px; 
+    width: 80%; /* tried to make grid smaller */
+    height: 80%;
+
+  }
+  
+  .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    bottom: 30px; /* tried to add space between text and bottom */
+    font-size: 36px;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+ 
+  .orange { background-color: #FFA200; }
+  .turquesa { background-color: #009093; }
+  .light-gray { background-color: #C9DAD9; }
+  .hot-pink { background-color: #E81A70; }
+  .white { background-color: #FFFFFF; }
+  .dark-blue { background-color: #2C308F; }
+  .gray-purple { background-color: #DAC9D2; }
+  .lime { background-color: #D8E81A; }
+  .red-orange { background-color: #FF4545; }
+  .lilac { background-color: #EACEF6; }
+  .white2 { background-color: #FFFFFF; }
+  .gray { background-color: #A7BAC0; }
+  .acqua { background-color: #9AECCF; }
+  .white3 { background-color: #FFFFFF; }
+  .baby-yellow { background-color: #FFFDC5; }
+  .brown { background-color: #814548; }
+
+  .bottom-grid {
+    width: 100%;
+    height: 20%; /* Adjust height to leave space for bottom grid */
+  }
+  
+  .bottom-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-template-rows: 1fr; /* One row */
+    gap: 5px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .bottom-grid-item {
+    background-color: white;
+    border: 1px solid black; /* Thin black outline */
+  }
+  .footnote {
+    display: flex;
+    width: 1000px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
