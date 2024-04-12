@@ -1,17 +1,30 @@
+#red-dot {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  pointer-events: none; /* Prevent the dot from affecting cursor events */
+}
+
+
+a:hover {
+  cursor: pointer;
+}
 .navbar {
-    background-color: #FFFFFF; /* Background color */
-    color: black; /* Text color */
+    background-color: #FFFFFF; 
+    color: black; 
     padding: 28px 0; 
     padding-bottom: 5px;
     text-align: center;
   }
   
   .navbar-title {
-    font-size: 78px; /* Adjust font size */
+    font-size: 6.5vmax; 
     font-family: Helvetica, Arial, sans-serif;
   }
 .container {
-    width: 100%; /* tried to scale page */
+    width: 100%; 
     height: 80%;
   }
 .grid-container {
@@ -19,21 +32,30 @@
     grid-template-columns: repeat(4, minmax(100px, 1fr));
     grid-template-rows: repeat(4, minmax(25vw, 1fr));
     gap: 0px; 
-    width: 100%; /* tried to make grid smaller */
+    width: 100%; 
     height: 100%;
 
   }
-  
-  .grid-item {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    bottom: 30px; /* tried to add space between text and bottom */
-    font-size: 2vmax;
-    text-align: center;
-    font-family: Helvetica, Arial, sans-serif;
-  }
  
+  .flip-card {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-end; /* Align to the bottom */
+    text-align: center; /* Center text */
+    font-size: 2vmax;
+    font-family: Helvetica, Arial, sans-serif;
+    height: 100%; /* Ensure the flip card fills the entire height */
+    
+  }
+  
+
+a {
+  color: inherit; /* Inherit color from parent */
+  text-decoration: none; /* Remove underline */
+  z-index: 1;
+}
+
+
   .orange { background-color: #FFA200; }
   .turquesa { background-color: #009093; }
   .light-gray { background-color: #C9DAD9; }
@@ -51,29 +73,43 @@
   .baby-yellow { background-color: #FFFDC5; }
   .brown { background-color: #814548; }
 
-  .bottom-grid {
-    width: 100%;
-    height: 20%; /* Adjust height to leave space for bottom grid */
-  }
-  
-  .bottom-grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns */
-    grid-template-rows: 1fr; /* One row */
-    gap: 5px;
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
-  
-  .bottom-grid-item {
-    background-color: white;
-    border: 1px solid black; /* Thin black outline */
-  }
+
   .footnote {
     display: flex;
-    width: 1000px;
-    height: auto;
     align-items: center;
+    width: 50vmax;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 2px;
     justify-content: center;
+    
   }
+  .circle {
+    border-radius: 80%;
+}
+
+
+
+.bottom-grid-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 0; /* Gap between grid items */
+  max-width: 100%; /* Limit the width */
+  padding: 100px 0; /* Add some padding for spacing */
+}
+
+.bottom-grid-item {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: #FFFFFF; /* Set background color */
+  border: 1px solid #000000; /* Light black border */
+  height: 30vh; 
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 1vmax;
+}
+.bottom-grid-item p {
+  margin: 5px 0; /* Add margin between paragraphs */
+}

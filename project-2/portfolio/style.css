@@ -1,0 +1,60 @@
+#red-dot {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    pointer-events: none; /* Prevent the dot from affecting cursor events */
+    z-index: 2;
+  }
+  
+  
+  a:hover {
+    cursor: pointer;
+  }
+.container {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; 
+}
+img {
+    max-width: 80vmax;
+    margin-top: 25px;
+    border: 1px solid #C9DAD9; /* Add black border */
+    align-items: center;
+    
+}
+.button-container {
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+button{
+    display: inline-block;
+    padding: 0.8vw 1.8vw;
+    font-size: 1.5vw;
+    letter-spacing: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    color: #fff;
+    background-color: #C9DAD9;
+    
+ }
+ #prevButton{
+    padding: 0.8vw 0.8vw;
+ }
+ 
+ #home {
+     position: fixed;
+     top: 20px; /* Adjust the distance from the top */
+     left: 20px; /* Adjust the distance from the left */
+     padding: 10px 20px;
+     font-size: 16px;
+     background-color: #FF4545;
+     color: white;
+     border: none;
+     cursor: pointer;
+ }

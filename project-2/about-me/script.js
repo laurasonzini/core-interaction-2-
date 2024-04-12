@@ -1,25 +1,16 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const prevBtn = document.querySelector("#prev-btn");
-    const nextBtn = document.querySelector("#next-btn");
-    const papers = document.querySelectorAll(".paper");
-    let currentPageIndex = 0;
+document.addEventListener('DOMContentLoaded', function() {
+    const redDot = document.getElementById('red-dot');
+  
+    
+    document.addEventListener('mousemove', function(event) {
+        redDot.style.left = (event.clientX - redDot.offsetWidth / 2) + 'px';
+        redDot.style.top = (event.clientY - redDot.offsetHeight / 2) + 'px';
+    });
+  });
+  
+var backButton = document.getElementById('back');
 
-    prevBtn.addEventListener("click", goPrevPage);
-    nextBtn.addEventListener("click", goNextPage);
-
-    function goPrevPage() {
-        if (currentPageIndex > 0) {
-            papers[currentPageIndex].classList.remove("visible");
-            currentPageIndex--;
-            papers[currentPageIndex].classList.add("visible");
-        }
-    }
-
-    function goNextPage() {
-        if (currentPageIndex < papers.length - 1) {
-            papers[currentPageIndex].classList.remove("visible");
-            currentPageIndex++;
-            papers[currentPageIndex].classList.add("visible");
-        }
-    }
+backButton.addEventListener('click', function() {
+    // Go back to the main page when the button is clicked
+    window.location.href = '/project-2/home/second.html'; // Replace 'main-page.html' with the actual URL of your main page
 });

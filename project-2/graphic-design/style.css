@@ -1,0 +1,55 @@
+body {
+    margin: 0; /* Remove default body margin */
+    display: flex; /* Use flexbox to center the container */
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+    height: 100vh; /* Make sure the body takes up the full viewport height */
+    overflow-x: hidden;
+}
+
+.image-container {
+    display: flex; /* Use flexbox to center the images horizontally */
+    justify-content: center; /* Center the images horizontally */
+    align-items: flex-end; /* Center the images vertically */
+    width: 100%; /* Full width */
+    height: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Ensure images stay in a single line */
+}
+
+.image-container::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+}
+
+.image {
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    flex-shrink: 0; /* Prevent images from shrinking */
+    position: relative; /* Required for absolute positioning of the caption */
+}
+
+.image img {
+    width: 60%; /* Set width of each image */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth transition for image scaling */
+}
+
+.image:hover img {
+    transform: translateY(-5px); /* Move image up by 5 pixels on hover */
+}
+
+.caption {
+    position: absolute; /* Position caption relative to its container */
+    bottom: -20px; /* Hide caption initially */
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #fff; /* Text color */
+    text-align: center;
+    padding: 5px 0; /* Padding top and bottom */
+    transition: bottom 0.3s ease; /* Smooth transition for caption reveal */
+}
+
+.image:hover .caption {
+    bottom: 0; /* Show caption on hover */
+}

@@ -1,0 +1,48 @@
+#red-dot {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    pointer-events: none; /* Prevent the dot from affecting cursor events */
+    z-index: 2;
+  }
+  
+  
+  a:hover {
+    cursor: pointer;
+  }
+body{
+    background-color: #DAC9D2;
+    margin: 0 auto;
+}
+img {
+    height: 90vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+button{
+   display: block;
+   padding: 1vw 6vw;
+   font-size: 1.5vw;
+   letter-spacing: 2px;
+   margin-left: auto;
+   margin-right: auto; 
+   border: none;
+   color: #fff;
+   background-color: #FF4545;
+}
+#back {
+    position: fixed;
+    top: 20px; /* Adjust the distance from the top */
+    left: 20px; /* Adjust the distance from the left */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #FF4545;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
