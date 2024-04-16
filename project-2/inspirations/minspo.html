@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,10 +8,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <p id="text"> The universe sends us exactly what we are ready for at the exact time we need it in our lives</p> 
-   <button type="button" onclick='changeQuote()'>CLICK ME</button>
+    <button id="back" type="button">back</button>
+    <p class="overlay-text">INSPIRING WORDS</p>
+    <div class="video-container">
+        <video autoplay muted loop playsinline class="fullscreen-video">
+            <source src="tulips.mp4" type="video/mp4">
+        </video>
+    </div>
+    <p id="text"> The universe sends us exactly what we are ready for at the exact time we need it in our lives</p> 
+    <button type="button" onclick='changeQuote()'>CLICK ME</button>
 
-   <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>

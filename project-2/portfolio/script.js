@@ -43,5 +43,5 @@ var backButton = document.getElementById('home');
 
 backButton.addEventListener('click', function() {
     // Go back to the main page when the button is clicked
-    window.location.href = '/project-2/home/second.html'; // Replace 'main-page.html' with the actual URL of your main page
+    window.location.href = '../home/second.html'; // Replace 'main-page.html' with the actual URL of your main page
 });

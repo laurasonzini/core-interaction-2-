@@ -5,3 +5,9 @@ var item = quotes[Math.floor(Math.random()*quotes.length)];
 quote.innerHTML = item;
 
     }
+    var backButton = document.getElementById('back');
+
+backButton.addEventListener('click', function() {
+    // Go back to the main page when the button is clicked
+    window.location.href = '../home/second.html'; // Replace 'main-page.html' with the actual URL of your main page
+});

@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   backButton.addEventListener('click', function() {
       console.log('Button clicked'); // Check if the button click event is triggered
-      window.location.href = '/project-2/home/second.html'; // Replace with the correct file path
+      window.location.href = '../home/second.html'; // Replace with the correct file path
   });
 });
 document.addEventListener('DOMContentLoaded', function() {
