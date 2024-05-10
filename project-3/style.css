@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    cursor: none;
+    background: linear-gradient(to right, #00d2ff, #3a7bd5);
+    animation: animateGradient 10s linear infinite alternate;
+  }
+  
+  #sketch-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; 
+}
+
+.custom-cursor {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none; 
+    z-index: 2; 
+}  
+
+
+.floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: darkblue; 
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-family: helvetica;
+    size: 24px;
+}
+
+.button:hover {
+    background-color: pink; 
+}
+
+@keyframes animateGradient {
+    0% {
+        background: linear-gradient(to right, #3d387f, gray);
+    }
+    25% {
+        background: linear-gradient(to right, #2548b2, #bfe9ff);
+    }
+    50% {
+        background: linear-gradient(to right, rgb(184, 231, 249), rgb(249, 209, 136));
+    }
+    75% {
+        background: linear-gradient(to right, gold, #ff6e7f);
+    }
+}
