@@ -5,6 +5,7 @@
     /* Add styles for smaller screens */
     body {
         font-size: 80%;  
+        
     }
 
     nav {
@@ -141,7 +142,7 @@ img {
   }
   .back-image {
     position: absolute;
-    top: -60px; /* Adjust based on your navigation bar height */
+    top: 40px; /* Adjust based on your navigation bar height */
     left: 0;
     width: 100%;
     height: auto;
